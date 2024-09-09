@@ -1,10 +1,65 @@
-body{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+header {
     position: fixed;
     top: 0;
-    background-color: aqua;
     width: 100%;
+}
+
+/* Navigation bar */
+
+nav {
+    margin-top: 0;
+    width: 100%;
+}
+
+#nav-bar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 42px;
+    background-color: rgb(3, 3, 3,0.7);
+}
+
+li{
+    height: 100%;
+    flex-grow: 1;
+    align-content: center;
+    text-align: center;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover:not(:active)
+{
+    background-color: rgb(1, 1, 1,0.9);
+}
+
+/* General for all pages */
+section{
+    height: 100vh;
+}
+
+/* Hero Page */
+#hero-container{
+    height: 60%;
+    background-image: url(Resources/HeroTravel.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#hero-container h1
+{
+    font-size: 50px;
+    ma
 }
