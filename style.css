@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -20,7 +25,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 42px;
+    height: 3rem;
     background-color: rgb(3, 3, 3,0.7);
 }
 
@@ -33,11 +38,13 @@ li{
 li a {
     text-decoration: none;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li:hover:not(:active)
 {
     background-color: rgb(1, 1, 1,0.9);
+    font-weight: bold;
 }
 
 /* General for all pages */
@@ -45,9 +52,13 @@ section{
     height: 100vh;
 }
 
+.page-content{
+    margin: 5rem 80px 20px 80px;
+}
+
 /* Hero Page */
 #hero-container{
-    height: 60%;
+    height: 60vh;
     background-image: url(Resources/HeroTravel.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -60,6 +71,7 @@ section{
 
 #hero-container h1
 {
+    color: white;
     font-size: 50px;
-    ma
+    margin: 20px;
 }
